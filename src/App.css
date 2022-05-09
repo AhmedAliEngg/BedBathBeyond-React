@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
+/* Carousel css */
+.myCarousel div>button[data-direction=right], .myCarousel div>button[data-direction=left]{
+  background: url(https://cdn.dsmcdn.com/web/production/slick-arrow.svg) 50% no-repeat;
+  border: none;
+  cursor: pointer;
+  height: 80px;
+  outline: 0;
+  position: relative;
+  top: 80px;
+}
+.myCarousel div>button[data-direction=left]{
+  left: -16px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+
+}
+.myCarousel div>button[data-direction=right]{
+  right: 4pc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* BreadCrums Css */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.txtSm.txtSm {
+  margin-top: 12pc;
+  margin-left: 11pc;
+  font-size: var(--txtSm);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Image Gallery */
+@import "~react-image-gallery/styles/css/image-gallery.css";

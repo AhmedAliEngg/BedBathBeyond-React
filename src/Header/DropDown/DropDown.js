@@ -63,7 +63,7 @@ export default function CustomizedMenus() {
 
     return (
         <div style={{ marginLeft: '10.5pc' }}>
-            <div style={{justifyContent:'space-between',display:'flex'}}>
+            <div style={{justifyContent:'space-between',display:'flex',marginRight:'5pc'}}>
             <div>
                 <Button
                     id="demo-customized-button"

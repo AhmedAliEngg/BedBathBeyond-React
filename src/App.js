@@ -1,14 +1,18 @@
-import PrimarySearchAppBar from "./Header/Header";
-import Rewards from "./Components/Rewards/Rewards";
+import React from "react";
+import './App.css'
+import { BrowserRouter, Route,Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+import ShoppingCarts from "./Pages/ShoppingCarts";
 function App() {
   return (
-    <div>
-     < PrimarySearchAppBar />
-     <div style={{    margin: '12pc 2pc 2pc 2pc'}}>
-     <Rewards/>
-     </div>
-    
-    </div>
+    <BrowserRouter>
+    <Routes>
+
+     <Route exact path="/" element={<Home/>}/>
+     <Route exact path="/ShoppingCarts" element={<ShoppingCarts/>}/>
+    </Routes>
+    </BrowserRouter>
+  
   );
 }
 
