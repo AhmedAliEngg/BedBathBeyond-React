@@ -27,3 +27,7 @@
 }
 /* Image Gallery */
 @import "~react-image-gallery/styles/css/image-gallery.css";
+.image-gallery-slide-wrapper.left, .image-gallery-slide-wrapper.right {
+  display: inline-block;
+  width: calc(40% - 20px);
+}
